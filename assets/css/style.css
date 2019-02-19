@@ -1,0 +1,451 @@
+body {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  /* display: flex; */
+  /* flex-direction: column; */
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main section */
+
+.hero-section::after {
+  content: "";
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background: url("../images/landingpage_background.jpeg") center;
+  /* background-color: ivory; */
+  background-size: cover;
+  
+  /* padding: 100px; */
+  min-height: 100vh;
+  /* width: 100%; */
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  
+}
+
+/* div::after {
+  content: "";
+  background: url(image.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+} */
+/* .background-image {
+  opacity: 0.5;
+  background-size: cover;
+  max-height: 100vh;
+} */
+
+.hero {
+  /* flex-grow: 1; */
+  /* min-height: 75vh; */
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  /* color: white; */
+  /* position: absolute; */
+}
+
+.heroMobile {
+  /* display: inline-block; */
+  /* margin-right: 8%; */
+  /* flex-basis: 350px; */
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+  flex: 1;
+  -webkit-animation: 1s ease-in moveLeft;
+  -moz-animation: 1s ease-in moveLeft;
+  -ms-animation: 1s ease-in moveLeft;
+  -o-animation: 1s ease-in moveLeft;
+  animation: 1s ease-in moveLeft;
+}
+
+p, h1 {
+  font-family: 'sans-serif'
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.heroText {
+  /* display: inline-block; */
+  flex: 1;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  flex-grow: 1;
+  /* margin-right: 5%; */
+  /* z-index: 1; */
+  /* position: absolute; */
+  /* float: right; */
+  margin-top: 5%;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.header-text {
+  font-size: 75px;
+  display: inline-block;
+}
+
+.app-icon {
+  width: 25%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 5%;
+  margin-right: 2%
+}
+
+.logo {
+  /* width: 500px;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-items: flex-end */
+  display: flex;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: absolute;
+  right: 5%;
+}
+
+.hero h1 {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 20px;
+  line-height: 38px;
+}
+
+.appButtons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5%;
+}
+
+.googleButton {
+  width: 180px;
+  height: 75px;
+  margin-left: -6%;
+
+}
+
+.appleButton {
+  width: 240px;
+  height: auto;
+}
+
+
+.hero .header-copy {
+  line-height: 28px;
+  margin-bottom: 10px;
+  font-size: 23px;
+  width: 500px;
+}
+
+.hero .header-copy b {
+  font-weight: bolder;
+}
+
+.mobileDisplay {
+  width: 100%;
+  height: auto;
+}
+
+.mobileDisplay2 {
+  width: 550px;
+  height: 575px;
+  position: relative;
+  margin-top: -40em;
+}
+
+/* middle */
+
+.features-section {
+  /* display: flex; */
+  padding: 5%;
+  justify-content: center;
+  background-color:  rgb(255, 255, 255);
+  -webkit-animation: 1s fadein ease;
+  -moz-animation: 1s fadein ease;
+  -ms-animation: 1s fadein ease;
+  -o-animation: 1s fadein ease;
+  animation: 1s fadein ease;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.feature h1 {
+  text-align: center;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: 0.7px;
+  font-size: 18px;
+  border-bottom: 2px solid rgb(221, 215, 215);
+}
+
+.feature h1 span {
+  color: black;
+  font-weight: 600;
+}
+
+.feature p {
+  text-align: center;
+  color: rgb(48, 45, 45);
+  font-size: 17px;
+  padding: 3%;
+  line-height: 1.5em;
+}
+
+.icon {
+  height: auto;
+  width: 30%;
+  /* position: relative; */
+}
+
+.firstFeature {
+  position: relative;
+  top: 5px;
+  margin-top: -4%;
+}
+
+.middleIcon {
+  height: 30%;
+  width: 40%;
+}
+
+.middleFeature {
+  margin-right: 10%;
+}
+
+.firstIcon,
+.middleIcon {
+  border-radius: 20%;
+  margin-left: 30%;
+}
+
+.doubleIcon {
+  margin-left: 15%;
+  border-radius: 35%;
+  height: 48%;
+  width: 65%;
+  max-width: 350px;
+  margin-bottom: -2%;
+}
+
+.doubleFeature {
+  position: relative;
+  bottom: 22px;
+  margin-bottom: 20%;
+}
+
+.featureText {
+  /* flex: 0 0 300px; */
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  background-color: rgb(41, 38, 38);
+  padding: 20px;
+  color: rgb(78, 73, 73);
+  font-size: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  margin-bottom: 3%;
+}
+
+.company h4,
+.connect h4 {
+  margin-bottom: 7%;
+}
+
+.company h4 a {
+  text-decoration: none;
+  color: rgb(78, 73, 73);
+}
+
+.company h4 a:hover {
+  text-decoration: underline;
+}
+
+.twitter {
+  width: 22px;
+  height: 27px;
+  vertical-align: top;
+  display: inline-block;
+
+}
+
+.igIcon {
+  width: 18px;
+  height: 18px;
+  margin-top: 7%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  /* .heroText {
+    margin-right: 10%;
+  } */
+
+  /* .mobileDisplay {
+    margin-top: -10%;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .features-section {
+    flex-wrap: wrap;
+  }
+
+  /* .hero-section {
+    flex-wrap: wrap-reverse;
+  } */
+
+  /* .heroText {
+    width: 100%;
+    margin-left: 35%;
+  } */
+
+  /* .heroMobile {
+    margin-top: 10%;
+    margin-left: 15%;
+  } */
+
+  .header-copy {
+    max-width: 100%;
+  }
+
+  .appButtons {
+    justify-content: flex-start;
+    margin-right: 10%;
+  }
+
+  .firstIcon {
+    left: 15px;
+  }
+
+  .firstIcon,
+  .middleIcon {
+    height: 40%;
+  }
+
+  .middleFeature {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .container {
+    overflow-x: hidden;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .appButtons {
+    flex-wrap: wrap;
+    margin-left: 3%;
+  }
+
+  /* .heroMobile {
+    margin-top: 20%;
+    margin-left: 35%;
+  } */
+
+  .heroText p {
+    margin-left: 5%;
+  }
+
+  .hero h1 {
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 50px;
+  }
+
+  .hero-section {
+    padding: 50px;
+  }
+
+  .heroText {
+    align-items: center;
+    margin-left: 20%;
+  }
+
+  .feature h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+
+  .heroMobile {
+    margin-left: 45%;
+  }
+
+  .mobileDisplay,
+  .mobileDisplay2 {
+    width: 500px;
+    height: 550px;
+  }
+}
